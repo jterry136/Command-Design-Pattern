@@ -1,6 +1,8 @@
 /**
  * 
  * @author annetumlin
+ * This class holds an ArrayList of commands and is responsible for executing
+ * each command. An agent is supposed to mimic a stock trading agent.
  *
  */
 import java.util.*;
