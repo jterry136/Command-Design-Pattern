@@ -1,7 +1,6 @@
 /**
  * This class will allow the user to buy a stock from the stock trade.
  * @author terric
- * @param <StockTrade>
  * 
  */
 public class BuyStockCommand {
@@ -10,9 +9,9 @@ public class BuyStockCommand {
 	private int shares;
 	
 	public BuyStockCommand(StockTrade stockTrade, String stockName, int shares ) {
-		stockName = this.stockName;
-		shares = this.shares;
-		stockTrade = this.stockTrade;
+		this.stockName = stockName;
+		this.shares = shares;
+		this.stockTrade = stockTrade;
 	}
 	/**
 	 * This method will create a new instance of stock.
@@ -21,7 +20,6 @@ public class BuyStockCommand {
 	 * @param shares: integer value of the number of shares a user is buying.
 	 */
 	public void execute() {
-		StockTrade stock = new StockTrade();
-		stock.buy(stockName, shares);
+		stockTrade.buy(stockName, shares);
 	}
 }
