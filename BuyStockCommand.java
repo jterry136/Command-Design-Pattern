@@ -3,7 +3,7 @@
  * @author terric
  * 
  */
-public class BuyStockCommand {
+public class BuyStockCommand implements Command{
 	private StockTrade stockTrade;
 	private String stockName;
 	private int shares;
